@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- TODO: Add <include> and <exclude> rules here for devices
+         running Android 11 and lower.
+         See https://developer.android.com/guide/topics/data/autobackup#XMLSyntax
+         for details. -->
+
+    <!-- Example: Include all shared preferences by default -->
+    <include domain="sharedpref" path="."/>
+
+    <!-- Example: Exclude a specific shared preference file -->
+    <!-- <exclude domain="sharedpref" path="device_specific.xml"/> -->
+
+    <!-- Example: Include all files in the files directory -->
+    <include domain="file" path="."/>
+
+    <!-- Example: Include all databases -->
+    <include domain="database" path="."/>
+
+    <!-- You can also add more specific include/exclude rules -->
+</full-backup-content>

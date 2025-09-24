@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup disableIfNoEncryptionCapabilities="true">
+        <!--
+            Default behavior:
+            Back up all files in "sharedpref", "database", "file", and "root" domains,
+            except for those in "no_backup" directories.
+            For more details, see: https://developer.android.com/about/versions/12/backup-restore#xml-changes
+        -->
+        <include domain="sharedpref" path="."/>
+        <include domain="database" path="."/>
+        <include domain="file" path="."/>
+        <include domain="root" path="."/>
+        <!-- You can add specific <exclude> rules here if needed.
+             For example, to exclude a specific shared preference file:
+        <exclude domain="sharedpref" path="my_sensitive_prefs.xml"/>
+             To exclude a specific database:
+        <exclude domain="database" path="local_cache.db"/>
+        -->
+    </cloud-backup>
+    <device-transfer>
+        <!-- Rules for device-to-device transfers (optional) -->
+        <include domain="sharedpref" path="."/>
+        <include domain="database" path="."/>
+        <include domain="file" path="."/>
+        <include domain="root" path="."/>
+    </device-transfer>
+</data-extraction-rules>
+    
