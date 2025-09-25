@@ -120,11 +120,7 @@ The app integrates with the DummyJSON API (https://dummyjson.com/products) for p
 3. Implement checkout process
 4. Add product reviews and ratings
 5. Implement wishlist feature
-6. Add push notifications
-7. Implement product recommendations
-8. Add analytics tracking
-9. Implement CI/CD pipeline
-10. Add more UI animations and transitions
+   
 
 ## Contributing
 
